@@ -12,9 +12,9 @@ javac MySQLConnection.java; java MySQLConnection
 # create table
 CREATE TABLE emp (
     empID int,
-    LastName varchar(255),
-    FirstName varchar(255)
+    Name varchar(255),
+    age int
 );
-=
+
 # insert into table
-INSERT INTO emp(empID, FirstName, LastName) VALUES (1, "test", "qwe");
+INSERT INTO emp(empID, Name, age) VALUES (1, "RAM", 10),(2, "SAM", 20),(3, "Amit", 30);
