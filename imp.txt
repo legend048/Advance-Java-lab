@@ -1,0 +1,19 @@
+# add connector in the env
+$env:CLASSPATH = [System.Environment]::GetEnvironmentVariable("CLASSPATH", "User"); Write-Host "Updated CLASSPATH: $env:CLASSPATH"
+
+# for runing 
+javac MySQLConnection.java; java -cp ".;mysql-connector-j-8.0.33.jar" MySQLConnection  
+javac mysql_con_and_print_emp.java; java -cp ".;mysql-connector-j-8.0.33.jar" mysql_con_and_print_emp
+
+# if using env
+javac MySQLConnection.java; java MySQLConnection
+
+# create table
+CREATE TABLE emp (
+    empID int,
+    LastName varchar(255),
+    FirstName varchar(255)
+);
+=
+# insert into table
+INSERT INTO emp(empID, FirstName, LastName) VALUES (1, "test", "qwe");
