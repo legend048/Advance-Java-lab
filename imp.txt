@@ -4,7 +4,7 @@ $env:CLASSPATH = [System.Environment]::GetEnvironmentVariable("CLASSPATH", "User
 # for runing 
 javac MySQLConnection.java; java -cp ".;mysql-connector-j-8.0.33.jar" MySQLConnection  
 javac mysql_con_and_print_emp.java; java -cp ".;mysql-connector-j-8.0.33.jar" mysql_con_and_print_emp
-javac mysql_crud_operations.java; java -cp ".;mysql-connector-j-8.0.33.jar" mysql_crud_operations.java
+javac Inet_Address.java; java -cp ".;mysql-connector-j-8.0.33.jar" Inet_Address.java
 
 # if using env
 javac MySQLConnection.java; java MySQLConnection
