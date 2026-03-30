@@ -18,3 +18,12 @@ CREATE TABLE emp (
 
 # insert into table
 INSERT INTO emp(empID, Name, age) VALUES (1, "RAM", 10),(2, "SAM", 20),(3, "Amit", 30);
+
+
+--------- 09 ---------
+runing:
+javac .\fectorial.java
+java fectorial server
+
+for client:
+java fectorial client 5
